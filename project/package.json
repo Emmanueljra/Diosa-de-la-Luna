@@ -1,0 +1,23 @@
+{
+  "name": "cabana-diosa-de-la-luna",
+  "version": "1.0.0",
+  "description": "Website for Cabaña Diosa de la Luna - Costa Rica tours and accommodation",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "keywords": [
+    "costa-rica",
+    "tours",
+    "chirripo",
+    "accommodation",
+    "adventure"
+  ],
+  "author": "Cabaña Diosa de la Luna",
+  "license": "MIT"
+}
