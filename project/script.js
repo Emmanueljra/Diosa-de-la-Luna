@@ -252,7 +252,7 @@ function openTourModal(tourId) {
 function getTourData(tourId) {
     const tours = {
         chirripo: {
-            name: 'Parque Nacional Cerro Chirripó',
+            name: 'Parque Nacional Chirripó',
             image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
             description: 'Vive la experiencia única de ascender al punto más alto de Costa Rica. El Cerro Chirripó, con sus 3,819 metros de altura, ofrece paisajes únicos, desde bosques nubosos hasta páramos de alta montaña. Una aventura espiritual que conecta tu alma con la naturaleza.',
             duration: '2 días / 1 noche',
