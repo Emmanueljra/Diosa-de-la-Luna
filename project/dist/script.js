@@ -607,14 +607,19 @@ window.addEventListener('load', addLoadingAnimation);
 
 // Smooth scroll for anchor links
 document.addEventListener('DOMContentLoaded', function() {
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    const anchorLinks = Array.from(document.querySelectorAll('a[href^="#"]'))
+    .filter(link => !link.closest('.modal'));
     
     anchorLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
+
+            if (!targetId.startsWith('#')) return;
+
+            e.preventDefault();
+
             const targetSection = document.querySelector(targetId);
-            
+
             if (targetSection) {
                 const offsetTop = targetSection.offsetTop - 80;
                 window.scrollTo({
