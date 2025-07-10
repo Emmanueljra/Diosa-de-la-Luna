@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Calendario de Actividades - Cabaña Diosa de la Luna</title>
-  <meta name="description" content="Consulta nuestro calendario virtual de tours y actividades de Cabaña Diosa de la Luna.">
-  <link rel="stylesheet" href="styles.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Cabaña Diosa de la Luna</title>
+    <meta name="description" content="Contáctanos para reservar tu aventura al Chirripó. WhatsApp, email y formulario de contacto disponibles.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- WhatsApp Fixed Button -->
-  <div class="whatsapp-float">
-    <a href="https://wa.me/50684163256?text=Hola,%20quiero%20consultar%20las%20fechas%20de%20actividades%20del%20calendario" target="_blank">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-  </div>
+    <!-- WhatsApp Fixed Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20los%20tours%20de%20Diosa%20de%20la%20Luna" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar">
@@ -30,9 +29,9 @@
                 <a href="tours-nacionales.html" class="nav-link">Tours Nacionales</a>
                 <a href="tours-internacionales.html" class="nav-link">Tours Internacionales</a>
                 <a href="cabana.html" class="nav-link">Cabaña</a>
-                <a href="contacto.html" class="nav-link">Contacto</a> 
+                <a href="calendario.html" class="nav-link">Calendario</a>
+                <a href="contacto.html" class="nav-link active">Contacto</a>
                 <a href="terminos.html" class="nav-link">Términos</a>
-                <a href="calendario.html" class="nav-link active">Calendario</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
@@ -42,379 +41,285 @@
         </div>
     </nav>
 
-  <!-- Page Header -->
-  <section class="page-header">
-    <div class="page-header-background">
-      <img src="https://images.pexels.com/photos/4088376/pexels-photo-4088376.jpeg" alt="Calendario de Actividades" />
-    </div>
-    <div class="page-header-content">
-      <h1>Calendario de Actividades</h1>
-      <p>Consulta nuestras fechas disponibles y próximas aventuras</p>
-    </div>
-  </section>
-
-  <!-- Calendario Virtual -->
-  <section class="tours-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Calendario Virtual</h2>
-        <p>Desliza entre meses para ver nuestras actividades planificadas</p>
-      </div>
-
-      <div class="calendar" id="calendar">
-        <div class="calendar-header">
-          <button id="prevMonth" class="btn btn-secondary"><i class="fas fa-chevron-left"></i></button>
-          <h3 id="monthYear"></h3>
-          <button id="nextMonth" class="btn btn-secondary"><i class="fas fa-chevron-right"></i></button>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-background">
+            <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg" alt="Contacto">
         </div>
-        <div class="calendar-grid" id="calendarDays">
-          <!-- Aquí se inyectan los días dinámicamente -->
+        <div class="page-header-content">
+            <h1>Contacto</h1>
+            <p>Comienza tu aventura con nosotros</p>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Leyenda del calendario -->
-    <div class="calendar-legend">
-      <div class="legend-item">
-        <span class="legend-color legend-evento"></span>
-        Día con evento disponible
-      </div>
-      <div class="legend-item">
-        <span class="legend-color legend-ocupado"></span>
-        Día no disponible
-      </div>
-    </div>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="section-header">
+                        <h2>Información de Contacto</h2>
+                        <p>Estamos aquí para ayudarte a planificar tu aventura</p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <p>+506 8416 3256</p>
+                                <span>Respuesta inmediata</span>
+                                <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20los%20tours%20de%20Diosa%20de%20la%20Luna" class="btn btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Escribir
+                                </a>
+                            </div>
+                        </div>
 
-  </section>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>info@diosadelalunacr.com</p>
+                                <span>Respuesta en 24 horas</span>
+                                <a href="mailto:info@diosadelalunacr.com" class="btn btn-email">
+                                    <i class="fas fa-envelope"></i> Enviar Email
+                                </a>
+                            </div>
+                        </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <!-- mismo contenido de footer que tours-nacionales -->
-  </footer>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Ubicación</h3>
+                                <p>San Gerardo de Rivas</p>
+                                <p>Pérez Zeledón, Costa Rica</p>
+                                <span>A 5 min del sendero al Chirripó</span>
+                            </div>
+                        </div>
 
-  <script src="script.js"></script>
-  <script>
-    // Calendario dinámico
-    const calendarDays = document.getElementById('calendarDays');
-    const monthYear = document.getElementById('monthYear');
-    const prevMonth = document.getElementById('prevMonth');
-    const nextMonth = document.getElementById('nextMonth');
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Horarios de Atención</h3>
+                                <p>Lunes a Domingo</p>
+                                <p>6:00 AM - 8:00 PM</p>
+                                <span>Disponibles para emergencias 24/7</span>
+                            </div>
+                        </div>
+                    </div>
 
-    let currentDate = new Date();
+                    <!-- Social Media -->
+                    <div class="social-media">
+                        <h3>Síguenos en Redes Sociales</h3>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/diosa_de_la_luna.cr/" target="_blank" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>@diosa_de_la_luna.cr</span>
+                            </a>
+                            <a href="https://www.facebook.com/Andreyshouse" target="_blank" class="social-link facebook">
+                                <i class="fab fa-facebook"></i>
+                                <span>Andreyshouse</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@diosa_dela_lunac.r" target="_blank" class="social-link tiktok">
+                                <i class="fab fa-tiktok"></i>
+                                <span>@diosa_dela_lunac.r</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    function renderCalendar(date) {
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="section-header">
+                        <h2>Envíanos un Mensaje</h2>
+                        <p>Completa el formulario y te contactaremos pronto</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre Completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="country">País</label>
+                                <select id="country" name="country">
+                                    <option value="">Selecciona tu país</option>
+                                    <option value="costa-rica">Costa Rica</option>
+                                    <option value="panama">Panamá</option>
+                                    <option value="guatemala">Guatemala</option>
+                                    <option value="nicaragua">Nicaragua</option>
+                                    <option value="honduras">Honduras</option>
+                                    <option value="el-salvador">El Salvador</option>
+                                    <option value="mexico">México</option>
+                                    <option value="usa">Estados Unidos</option>
+                                    <option value="canada">Canadá</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
 
-        // Diccionario de eventos (puedes expandirlo)
-        const eventos = {
-            "2025-07-12": "Tour al Chirripó (Completo)",
-            "2025-07-20": "Hospedaje disponible",
-            "2025-07-28": "Tour Volcán Irazú",
-            "2025-08-20": "Tour Volcán Irazú",
-        };
+                        <div class="form-group">
+                            <label for="tour">Tour de Interés</label>
+                            <select id="tour" name="tour">
+                                <option value="">Selecciona un tour</option>
+                                <optgroup label="Tours Nacionales">
+                                    <option value="chirripo">Cerro Chirripó</option>
+                                    <option value="corcovado">Parque Nacional Corcovado</option>
+                                    <option value="irazu">Volcán Irazú</option>
+                                    <option value="cloudbridge">Reserva Natural CloudBridge</option>
+                                    <option value="talamanca">Reserva Natural Talamanca</option>
+                                </optgroup>
+                                <optgroup label="Tours Internacionales">
+                                    <option value="baru-3d">Volcán Barú Panamá 3D/2N</option>
+                                    <option value="baru-4d">Volcán Barú Panamá 4D/3N</option>
+                                    <option value="baru-4x4">Volcán Barú Tour 4x4</option>
+                                    <option value="guatemala-volcanes">Guatemala Tierra de Volcanes</option>
+                                    <option value="guatemala-7d">Guatemala Tour 7D/6N</option>
+                                    <option value="guatemala-historico">Guatemala Histórico 4D/3N</option>
+                                </optgroup>
+                                <optgroup label="Hospedaje">
+                                    <option value="cabana">Hospedaje Cabaña</option>
+                                    <option value="paquete">Paquete Hospedaje + Tour</option>
+                                </optgroup>
+                            </select>
+                        </div>
 
-        calendarDays.innerHTML = '';
+                        <div class="form-group">
+                            <label for="dates">Fechas Preferidas</label>
+                            <input type="text" id="dates" name="dates" placeholder="Ej: Primera semana de marzo 2024">
+                        </div>
 
-        const month = date.getMonth();
-        const year = date.getFullYear();
+                        <div class="form-group">
+                            <label for="people">Número de Personas</label>
+                            <select id="people" name="people">
+                                <option value="">Selecciona</option>
+                                <option value="1">1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                                <option value="5">5 personas</option>
+                                <option value="6">6 personas</option>
+                                <option value="7-10">7-10 personas</option>
+                                <option value="mas-10">Más de 10 personas</option>
+                            </select>
+                        </div>
 
-        monthYear.textContent = date.toLocaleString('es-ES', { month: 'long', year: 'numeric' });
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Cuéntanos sobre tu experiencia deseada, preguntas específicas, o cualquier requerimiento especial..." required></textarea>
+                        </div>
 
-        const firstDay = new Date(year, month, 1);
-        const lastDay = new Date(year, month + 1, 0);
-        const firstDayIndex = firstDay.getDay(); // 0 (domingo) - 6 (sábado)
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Quiero recibir información sobre nuevos tours y ofertas especiales
+                            </label>
+                        </div>
 
-        const daysInMonth = lastDay.getDate();
-
-        // Días de la semana
-        const weekdays = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
-        weekdays.forEach(day => {
-        const div = document.createElement('div');
-        div.classList.add('calendar-day-name');
-        div.textContent = day;
-        calendarDays.appendChild(div);
-        });
-
-        // Días vacíos al inicio
-        for (let i = 0; i < (firstDayIndex === 0 ? 6 : firstDayIndex - 1); i++) {
-        const empty = document.createElement('div');
-        empty.classList.add('calendar-day', 'empty');
-        calendarDays.appendChild(empty);
-        }
-
-        // Días del mes
-        for (let i = 1; i <= daysInMonth; i++) {
-            const day = document.createElement('div');
-            day.classList.add('calendar-day');
-            day.textContent = i;
-
-            // Generar fecha en formato YYYY-MM-DD
-            const dateStr = `${year}-${(month + 1).toString().padStart(2, "0")}-${i
-                .toString()
-                .padStart(2, "0")}`;
-            day.setAttribute("data-date", dateStr);
-
-            // Si hay evento en esa fecha
-            if (eventos[dateStr]) {
-                day.classList.add("evento-activo");
-                day.title = eventos[dateStr];
-
-                // Mostrar modal con el detalle
-                    day.addEventListener("click", () => {
-                        const titulo = eventos[dateStr];
-                        const fecha = dateStr;
-
-                        document.getElementById("modalTitulo").innerText = titulo;
-                        document.getElementById("modalFecha").innerText = fecha;
-
-                        // Codificar mensaje completo para evitar errores con espacios o símbolos
-                        const whatsappBtn = document.getElementById("btnWhatsapp");
-                        const mensaje = `Hola, quisiera consultar sobre: ${eventos[dateStr]} (${dateStr})`;
-                        const url = `https://wa.me/50684163256?text=${encodeURIComponent(mensaje)}`;
-                        whatsappBtn.href = url;
-
-                        document.getElementById("modalEvento").style.display = "block";
-                    });
-
-            }
-
-            calendarDays.appendChild(day);
-        }
-
-    }
-
-    prevMonth.addEventListener('click', () => {
-      const today = new Date();
-      const prev = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);
-
-      // Solo renderizar si el mes anterior no es menor al actual
-      if (prev >= new Date(today.getFullYear(), today.getMonth(), 1)) {
-        currentDate.setMonth(currentDate.getMonth() - 1);
-        renderCalendar(currentDate);
-      }
-    });
-
-
-    nextMonth.addEventListener('click', () => {
-      currentDate.setMonth(currentDate.getMonth() + 1);
-      renderCalendar(currentDate);
-    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-      renderCalendar(currentDate);
-    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-    renderCalendar(currentDate);
-
-    const modal = document.getElementById("modalEvento");
-    const closeBtn = document.querySelector(".close");
-
-    if (closeBtn && modal) {
-        closeBtn.addEventListener("click", () => {
-        modal.style.display = "none";
-        });
-
-        window.addEventListener("click", (e) => {
-        if (e.target === modal) {
-            modal.style.display = "none";
-        }
-        });
-    }
-    });
-
-  </script>
-
-  <style>
-    .calendar {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .calendar-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1.5rem;
-    }
-
-    .calendar-header h3 {
-      font-family: var(--font-heading);
-      font-size: 1.8rem;
-      color: var(--primary-color);
-    }
-
-    .calendar-header .btn {
-      background-color: #fff;
-      color: #2b4d1d;
-      border: 2px solid #fcd307;
-      padding: 0.6rem 1rem;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 1.1rem;
-      transition: background-color 0.3s, transform 0.2s;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .calendar-header .btn:hover {
-      background-color: #fcd307;
-      color: #000;
-      transform: scale(1.05);
-    }
-
-    .calendar-grid {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 10px;
-    }
-
-    .calendar-day-name {
-      font-weight: bold;
-      color: var(--secondary-color);
-      padding: 0.5rem 0;
-    }
-
-    .calendar-day {
-      background: var(--mist-gray);
-      padding: 0.7rem;
-      border-radius: 8px;
-      font-weight: 500;
-      color: var(--text-dark);
-    }
-
-    .calendar-day.empty {
-      background: transparent;
-    }
-
-    .modal-content {
-        background-color: #fff;
-        margin: 10% auto;
-        padding: 2.5rem 2rem;
-        border-radius: 14px;
-        width: 90%;
-        max-width: 500px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
-        text-align: center;
-        position: relative;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .modal-content h3 {
-        color: #2b4d1d; /* Verde oscuro de la marca */
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-        font-weight: 700;
-    }
-
-    .modal-content p {
-        color: #333;
-        font-size: 1.1rem;
-        margin-bottom: 1.2rem;
-        font-weight: 500;
-    }
-
-    .modal-content .fecha-evento {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.4rem;
-        color: #6b6b6b;
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .modal-content .fecha-evento i {
-        color: #2b4d1d;
-    }
-
-    .modal-content .btn-whatsapp {
-        display: inline-block;
-        padding: 0.8rem 1.5rem;
-        background-color: #25D366;
-        color: white;
-        font-weight: 600;
-        font-size: 1rem;
-        border: none;
-        border-radius: 8px;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
-
-    .modal-content .btn-whatsapp:hover {
-        background-color: #1ebc5a;
-        text-decoration: none;
-        color: white;
-    }
-
-    .close {
-        position: absolute;
-        top: 14px;
-        right: 18px;
-        color: #aaa;
-        font-size: 24px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .close:hover {
-        color: #000;
-    }
-
-    .calendar-legend {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 1.5rem;
-      font-size: 0.95rem;
-      color: #333;
-      font-family: 'Montserrat', sans-serif;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background: #f9f9f9;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    .legend-color {
-      width: 20px;
-      height: 20px;
-      border: 2px solid #000;
-      border-radius: 6px;
-    }
-
-    .legend-evento {
-      background-color: #fcd307; /* Amarillo */
-    }
-
-    .legend-ocupado {
-      background-color: var(--mist-gray, #e5e5e5); /* Gris del calendario */
-    }
-
-  </style>
-
-    <!-- Modal de evento -->
-    <div id="modalEvento" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3>Detalle del Evento</h3>
-            <p id="modalTitulo">Tour al Chirripó (Completo)</p>
-            <div class="fecha-evento"><i class="fas fa-calendar-alt"></i> <span id="modalFecha">2025-07-12</span></div>
-            <a href="#" target="_blank" class="btn-whatsapp" id="btnWhatsapp">
-            <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
-            </a>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-  <!-- Footer -->
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Respuestas a las consultas más comunes</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuál es la mejor época para visitar el Chirripó?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La época seca (diciembre a abril) es ideal para el ascenso, con menos lluvia y cielos más despejados. Sin embargo, realizamos tours todo el año con las precauciones necesarias.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Qué nivel de condición física necesito?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Para el Chirripó se requiere condición física moderada a buena. Recomendamos entrenar 4-6 semanas antes con caminatas regulares y ejercicio cardiovascular.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Incluyen equipo de montaña?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Incluimos equipo básico de seguridad. Para equipo especializado como sleeping bags y ropa de montaña, proporcionamos una lista detallada de lo que necesitas traer.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuál es la política de cancelación?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Cancelaciones con más de 15 días: 90% de reembolso. Entre 7-15 días: 50%. Menos de 7 días: no hay reembolso, excepto por condiciones climáticas adversas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Realizan tours privados?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos tours privados para grupos de 4 o más personas. Estos incluyen guía exclusivo, itinerario personalizado y mayor flexibilidad en fechas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para tu próxima aventura?</h2>
+                <p>No esperes más, contáctanos ahora y comienza a planificar la experiencia de tu vida</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/50684163256?text=Hola,%20quiero%20más%20información%20sobre%20los%20tours%20de%20Diosa%20de%20la%20Luna" class="btn btn-primary">Contactar por WhatsApp</a>
+                    <a href="tours-nacionales.html" class="btn btn-secondary">Ver Tours</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -437,7 +342,6 @@
                         <li><a href="tours-nacionales.html">Tours Nacionales</a></li>
                         <li><a href="tours-internacionales.html">Tours Internacionales</a></li>
                         <li><a href="cabana.html">Cabaña</a></li>
-                        <li><a href="calendario.html">Calendario</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -462,5 +366,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
