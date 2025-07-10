@@ -252,8 +252,8 @@ function openTourModal(tourId) {
 function getTourData(tourId) {
     const tours = {
         chirripo: {
-            name: 'Parque Nacional Cerro Chirripó',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            name: 'Parque Nacional Chirripó',
+            image: '/images/chirripo_letrero.jpg',
             description: 'Vive la experiencia única de ascender al punto más alto de Costa Rica. El Cerro Chirripó, con sus 3,819 metros de altura, ofrece paisajes únicos, desde bosques nubosos hasta páramos de alta montaña. Una aventura espiritual que conecta tu alma con la naturaleza.',
             duration: '2 días / 1 noche',
             price: 'Desde $180 por persona',
@@ -278,7 +278,7 @@ function getTourData(tourId) {
         },
         corcovado: {
             name: 'Parque Nacional Corcovado',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/images/parque_nacional_corcovado.jpg',
             description: 'Explora el lugar con mayor biodiversidad de Costa Rica. Corcovado alberga el 2.5% de la biodiversidad mundial en menos del 0.001% de la superficie terrestre. Una experiencia única para los amantes de la naturaleza.',
             duration: '3 días / 2 noches',
             price: 'Desde $320 por persona',
@@ -304,7 +304,7 @@ function getTourData(tourId) {
         },
         irazu: {
             name: 'Volcán Irazú',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/images/volcan_irazu.jpg',
             description: 'Visita el volcán más alto de Costa Rica y contempla sus impresionantes cráteres. En días despejados, puedes ver ambos océanos desde su cima.',
             duration: '1 día',
             price: 'Desde $85 por persona',
@@ -327,7 +327,7 @@ function getTourData(tourId) {
         },
         cloudbridge: {
             name: 'Reserva Natural CloudBridge',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/images/reserva_natural_cloudBridge.jpg',
             description: 'Camina entre las nubes en esta reserva privada dedicada a la conservación. Senderos místicos y vistas espectaculares te esperan.',
             duration: '1 día',
             price: 'Desde $95 por persona',
@@ -350,7 +350,7 @@ function getTourData(tourId) {
         },
         talamanca: {
             name: 'Reserva Natural Talamanca',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/images/reserva_talamanca.png',
             description: 'Aventura en una de las reservas más vírgenes de Costa Rica. Naturaleza en estado puro y conexión total con el ambiente.',
             duration: '2 días / 1 noche',
             price: 'Desde $220 por persona',
@@ -373,7 +373,7 @@ function getTourData(tourId) {
         },
         'baru-3d': {
             name: 'Volcán Barú Panamá - 3 Días / 2 Noches',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/images/volcan_baru.jpg',
             description: 'Conquista el punto más alto de Panamá. Una aventura internacional que te llevará a los 3,475 metros de altura del Volcán Barú.',
             duration: '3 días / 2 noches',
             price: 'Desde $380 por persona',
@@ -398,7 +398,7 @@ function getTourData(tourId) {
         },
         'baru-4d': {
             name: 'Volcán Barú Panamá - 4 Días / 3 Noches',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/images/volcan_baru_2.jpg',
             description: 'Experiencia completa en Panamá incluyendo el ascenso al Volcán Barú y exploración de la región de Chiriquí.',
             duration: '4 días / 3 noches',
             price: 'Desde $480 por persona',
@@ -424,7 +424,7 @@ function getTourData(tourId) {
         },
         'baru-4x4': {
             name: 'Volcán Barú Tour 4x4',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/images/volcan_baru_4x4.jpg',
             description: 'Accede cómodamente al Volcán Barú en vehículo 4x4. Perfecto para quienes quieren disfrutar de las vistas sin el esfuerzo físico extremo.',
             duration: '2 días / 1 noche',
             price: 'Desde $280 por persona',
@@ -447,7 +447,7 @@ function getTourData(tourId) {
         },
         'guatemala-volcanes': {
             name: 'Guatemala Tierra de Volcanes',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/images/guatemala_volcanes.jpg',
             description: 'Explora los volcanes más impresionantes de Guatemala en una aventura única que combina naturaleza, cultura y espiritualidad maya.',
             duration: '5 días / 4 noches',
             price: 'Desde $650 por persona',
@@ -474,7 +474,7 @@ function getTourData(tourId) {
         },
         'guatemala-7d': {
             name: 'Guatemala Tour 7 Días / 6 Noches',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/images/guatemala_tour.jpg',
             description: 'Experiencia completa en Guatemala: volcanes, cultura maya, sitios arqueológicos y paisajes únicos en Centroamérica.',
             duration: '7 días / 6 noches',
             price: 'Desde $850 por persona',
@@ -501,7 +501,7 @@ function getTourData(tourId) {
         },
         'guatemala-historico': {
             name: 'Guatemala Histórico 4 Días / 3 Noches',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/images/guatemala_historico.jpg',
             description: 'Sumérgete en la rica historia y cultura maya de Guatemala. Un viaje a través del tiempo en los sitios más emblemáticos.',
             duration: '4 días / 3 noches',
             price: 'Desde $520 por persona',
