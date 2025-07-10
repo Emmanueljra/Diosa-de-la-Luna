@@ -447,7 +447,7 @@ function getTourData(tourId) {
         },
         'guatemala-volcanes': {
             name: 'Guatemala Tierra de Volcanes',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/assets/guatemala_volcanes.jpg',
             description: 'Explora los volcanes más impresionantes de Guatemala en una aventura única que combina naturaleza, cultura y espiritualidad maya.',
             duration: '5 días / 4 noches',
             price: 'Desde $650 por persona',
@@ -474,7 +474,7 @@ function getTourData(tourId) {
         },
         'guatemala-7d': {
             name: 'Guatemala Tour 7 Días / 6 Noches',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/assets/guatemala_tour.jpg',
             description: 'Experiencia completa en Guatemala: volcanes, cultura maya, sitios arqueológicos y paisajes únicos en Centroamérica.',
             duration: '7 días / 6 noches',
             price: 'Desde $850 por persona',
@@ -501,7 +501,7 @@ function getTourData(tourId) {
         },
         'guatemala-historico': {
             name: 'Guatemala Histórico 4 Días / 3 Noches',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/assets/guatemala_historico.jpg',
             description: 'Sumérgete en la rica historia y cultura maya de Guatemala. Un viaje a través del tiempo en los sitios más emblemáticos.',
             duration: '4 días / 3 noches',
             price: 'Desde $520 por persona',
