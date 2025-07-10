@@ -373,7 +373,7 @@ function getTourData(tourId) {
         },
         'baru-3d': {
             name: 'Volcán Barú Panamá - 3 Días / 2 Noches',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/assets/volcan_baru.jpg',
             description: 'Conquista el punto más alto de Panamá. Una aventura internacional que te llevará a los 3,475 metros de altura del Volcán Barú.',
             duration: '3 días / 2 noches',
             price: 'Desde $380 por persona',
@@ -398,7 +398,7 @@ function getTourData(tourId) {
         },
         'baru-4d': {
             name: 'Volcán Barú Panamá - 4 Días / 3 Noches',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/assets/volcan_baru_2.jpg',
             description: 'Experiencia completa en Panamá incluyendo el ascenso al Volcán Barú y exploración de la región de Chiriquí.',
             duration: '4 días / 3 noches',
             price: 'Desde $480 por persona',
@@ -424,7 +424,7 @@ function getTourData(tourId) {
         },
         'baru-4x4': {
             name: 'Volcán Barú Tour 4x4',
-            image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg',
+            image: '/assets/volcan_baru_4x4.jpg',
             description: 'Accede cómodamente al Volcán Barú en vehículo 4x4. Perfecto para quienes quieren disfrutar de las vistas sin el esfuerzo físico extremo.',
             duration: '2 días / 1 noche',
             price: 'Desde $280 por persona',
