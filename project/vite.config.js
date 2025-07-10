@@ -11,7 +11,8 @@ export default defineConfig({
         contacto: 'contacto.html',
         terminos: 'terminos.html',
         'tours-nacionales': 'tours-nacionales.html',
-        'tours-internacionales': 'tours-internacionales.html'
+        'tours-internacionales': 'tours-internacionales.html',
+        'calendario': 'calendario.html'
       }
     }
   },

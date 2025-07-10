@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tours Nacionales - Cabaña Diosa de la Luna</title>
-    <meta name="description" content="Descubre los mejores tours nacionales de Costa Rica: Chirripó, Corcovado, Irazú y más destinos únicos con Diosa de la Luna.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Descubre los mejores tours nacionales de Costa Rica: Chirripó, Corcovado, Irazú y más destinos únicos con Diosa de la Luna.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" crossorigin href="/assets/styles-BZP5mflq.css">
+    <link rel="stylesheet" crossorigin href="/assets/styles-BZP5mflq.css">
 </head>
+
 <body>
     <!-- WhatsApp Fixed Button -->
     <div class="whatsapp-float">
-        <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20los%20tours%20nacionales" target="_blank">
+        <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20los%20tours%20nacionales"
+            target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
@@ -21,7 +27,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="/assets/logodiosa-DqjlB8U6.png" alt="Diosa de la Luna Logo">
+                <img src="/images/logodiosa.png" alt="Diosa de la Luna Logo">
                 <span>Diosa de la Luna</span>
             </div>
             <div class="nav-menu" id="nav-menu">
@@ -29,6 +35,7 @@
                 <a href="tours-nacionales.html" class="nav-link active">Tours Nacionales</a>
                 <a href="tours-internacionales.html" class="nav-link">Tours Internacionales</a>
                 <a href="cabana.html" class="nav-link">Cabaña</a>
+                <a href="calendario.html" class="nav-link">Calendario</a>
                 <a href="contacto.html" class="nav-link">Contacto</a>
                 <a href="terminos.html" class="nav-link">Términos</a>
             </div>
@@ -43,7 +50,8 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="page-header-background">
-            <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg" alt="Tours Nacionales Costa Rica">
+            <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg"
+                alt="Tours Nacionales Costa Rica">
         </div>
         <div class="page-header-content">
             <h1>Tours Nacionales</h1>
@@ -58,170 +66,199 @@
                 <h2>Nuestros Tours en Costa Rica</h2>
                 <p>Aventuras únicas en el paraíso natural costarricense</p>
             </div>
-            
-            <div class="tours-grid">
-                <!-- Cerro Chirripó -->
-                <div class="tour-card" data-tour="chirripo">
-                    <div class="tour-image">
-                        <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg" alt="Cerro Chirripó">
-                        <div class="tour-badge">Más Popular</div>
+
+            <!-- Tours de 1 Día -->
+            <div class="country-section">
+                <h3 class="country-title">Tour de 1 día</h3>
+                <div class="tours-grid">
+                    <!-- Volcán Irazú -->
+                    <div class="tour-card" data-tour="irazu">
+                        <div class="tour-image">
+                            <img src="/assets/volcan_irazu.jpg"
+                                alt="Volcán Irazú">
+                        </div>
+                        <div class="tour-content">
+                            <h3>Volcán Irazú</h3>
+                            <p class="tour-description">El volcán más alto de Costa Rica. En días despejados puedes ver
+                                ambos océanos desde su cima.</p>
+                            <div class="tour-details">
+                                <div class="tour-detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>1 día</span>
+                                </div>
+                                <div class="tour-detail">
+                                    <i class="fas fa-users"></i>
+                                    <span>4-15 personas</span>
+                                </div>
+                                <div class="tour-detail">
+                                    <i class="fas fa-mountain"></i>
+                                    <span>Dificultad: Fácil</span>
+                                </div>
+                            </div>
+                            <div class="tour-price">
+                                <span class="price">Desde $85</span>
+                                <span class="price-unit">por persona</span>
+                            </div>
+                            <div class="tour-buttons">
+                                <button class="btn btn-primary" onclick="openTourModal('irazu')">Ver Detalles</button>
+                                <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20el%20tour%20al%20Volcán%20Irazú.%20¿Podrían%20darme%20más%20información?"
+                                    class="btn btn-secondary">Consultar</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tour-content">
-                        <h3>Parque Nacional Cerro Chirripó</h3>
-                        <p class="tour-description">La montaña más alta de Costa Rica (3,819m). Una experiencia espiritual única al punto más alto del país.</p>
-                        <div class="tour-details">
-                            <div class="tour-detail">
-                                <i class="fas fa-clock"></i>
-                                <span>2 días / 1 noche</span>
-                            </div>
-                            <div class="tour-detail">
-                                <i class="fas fa-users"></i>
-                                <span>4-12 personas</span>
-                            </div>
-                            <div class="tour-detail">
-                                <i class="fas fa-mountain"></i>
-                                <span>Dificultad: Alta</span>
-                            </div>
+
+                    <!-- Reserva Natural CloudBridge -->
+                    <div class="tour-card" data-tour="cloudbridge">
+                        <div class="tour-image">
+                            <img src="/assets/reserva_natural_cloudbridge.jpg"
+                                alt="CloudBridge">
                         </div>
-                        <div class="tour-price">
-                            <span class="price">Desde $180</span>
-                            <span class="price-unit">por persona</span>
-                        </div>
-                        <div class="tour-buttons">
-                            <button class="btn btn-primary" onclick="openTourModal('chirripo')">Ver Detalles</button>
-                            <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20el%20tour%20al%20Cerro%20Chirripó.%20¿Podrían%20darme%20más%20información?" class="btn btn-secondary">Consultar</a>
+                        <div class="tour-content">
+                            <h3>Reserva Natural CloudBridge</h3>
+                            <p class="tour-description">Camina entre las nubes en esta reserva privada dedicada a la
+                                conservación del bosque nuboso.</p>
+                            <div class="tour-details">
+                                <div class="tour-detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>1 día</span>
+                                </div>
+                                <div class="tour-detail">
+                                    <i class="fas fa-users"></i>
+                                    <span>4-12 personas</span>
+                                </div>
+                                <div class="tour-detail">
+                                    <i class="fas fa-mountain"></i>
+                                    <span>Dificultad: Moderada</span>
+                                </div>
+                            </div>
+                            <div class="tour-price">
+                                <span class="price">Desde $95</span>
+                                <span class="price-unit">por persona</span>
+                            </div>
+                            <div class="tour-buttons">
+                                <button class="btn btn-primary" onclick="openTourModal('cloudbridge')">Ver
+                                    Detalles</button>
+                                <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20el%20tour%20a%20la%20Reserva%20Natural%20CloudBridge.%20¿Podrían%20darme%20más%20información?"
+                                    class="btn btn-secondary">Consultar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Parque Nacional Corcovado -->
-                <div class="tour-card" data-tour="corcovado">
-                    <div class="tour-image">
-                        <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg" alt="Corcovado">
+            <!-- Tours de 2 o mas dás -->
+            <div class="country-section">
+                <h3 class="country-title">Tour de 2 o más días</h3>
+                <div class="tours-grid">
+                    <!-- Cerro Chirripó -->
+                    <div class="tour-card" data-tour="chirripo">
+                        <div class="tour-image">
+                            <img src="/assets/chirripo_letrero.jpg"
+                                alt="Cerro Chirripó">
+                            <div class="tour-badge">Más Popular</div>
+                        </div>
+                        <div class="tour-content">
+                            <h3>Parque Nacional Chirripó</h3>
+                            <p class="tour-description">La montaña más alta de Costa Rica (3,819m). Una experiencia
+                                espiritual única al punto más alto del país.</p>
+                            <div class="tour-details">
+                                <div class="tour-detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>2 días / 1 noche</span>
+                                </div>
+                                <div class="tour-detail">
+                                    <i class="fas fa-users"></i>
+                                    <span>4-12 personas</span>
+                                </div>
+                                <div class="tour-detail">
+                                    <i class="fas fa-mountain"></i>
+                                    <span>Dificultad: Alta</span>
+                                </div>
+                            </div>
+                            <div class="tour-price">
+                                <span class="price">Desde $180</span>
+                                <span class="price-unit">por persona</span>
+                            </div>
+                            <div class="tour-buttons">
+                                <button class="btn btn-primary" onclick="openTourModal('chirripo')">Ver
+                                    Detalles</button>
+                                <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20el%20tour%20al%20Cerro%20Chirripó.%20¿Podrían%20darme%20más%20información?"
+                                    class="btn btn-secondary">Consultar</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tour-content">
-                        <h3>Parque Nacional Corcovado</h3>
-                        <p class="tour-description">El lugar con mayor biodiversidad de Costa Rica. Hogar del 2.5% de la biodiversidad mundial.</p>
-                        <div class="tour-details">
-                            <div class="tour-detail">
-                                <i class="fas fa-clock"></i>
-                                <span>3 días / 2 noches</span>
-                            </div>
-                            <div class="tour-detail">
-                                <i class="fas fa-users"></i>
-                                <span>4-10 personas</span>
-                            </div>
-                            <div class="tour-detail">
-                                <i class="fas fa-mountain"></i>
-                                <span>Dificultad: Moderada</span>
-                            </div>
-                        </div>
-                        <div class="tour-price">
-                            <span class="price">Desde $320</span>
-                            <span class="price-unit">por persona</span>
-                        </div>
-                        <div class="tour-buttons">
-                            <button class="btn btn-primary" onclick="openTourModal('corcovado')">Ver Detalles</button>
-                            <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20el%20tour%20al%20Parque%20Nacional%20Corcovado.%20¿Podrían%20darme%20más%20información?" class="btn btn-secondary">Consultar</a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Volcán Irazú -->
-                <div class="tour-card" data-tour="irazu">
-                    <div class="tour-image">
-                        <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg" alt="Volcán Irazú">
+                    <!-- Reserva Natural Talamanca -->
+                    <div class="tour-card" data-tour="talamanca">
+                        <div class="tour-image">
+                            <img src="/assets/reserva_talamanca.png"
+                                alt="Talamanca">
+                        </div>
+                        <div class="tour-content">
+                            <h3>Reserva Natural Talamanca</h3>
+                            <p class="tour-description">Aventura en una de las reservas más vírgenes de Costa Rica.
+                                Naturaleza en estado puro.</p>
+                            <div class="tour-details">
+                                <div class="tour-detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>2 días / 1 noche</span>
+                                </div>
+                                <div class="tour-detail">
+                                    <i class="fas fa-users"></i>
+                                    <span>4-10 personas</span>
+                                </div>
+                                <div class="tour-detail">
+                                    <i class="fas fa-mountain"></i>
+                                    <span>Dificultad: Moderada-Alta</span>
+                                </div>
+                            </div>
+                            <div class="tour-price">
+                                <span class="price">Desde $220</span>
+                                <span class="price-unit">por persona</span>
+                            </div>
+                            <div class="tour-buttons">
+                                <button class="btn btn-primary" onclick="openTourModal('talamanca')">Ver
+                                    Detalles</button>
+                                <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20el%20tour%20a%20la%20Reserva%20Natural%20Talamanca.%20¿Podrían%20darme%20más%20información?"
+                                    class="btn btn-secondary">Consultar</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tour-content">
-                        <h3>Volcán Irazú</h3>
-                        <p class="tour-description">El volcán más alto de Costa Rica. En días despejados puedes ver ambos océanos desde su cima.</p>
-                        <div class="tour-details">
-                            <div class="tour-detail">
-                                <i class="fas fa-clock"></i>
-                                <span>1 día</span>
-                            </div>
-                            <div class="tour-detail">
-                                <i class="fas fa-users"></i>
-                                <span>4-15 personas</span>
-                            </div>
-                            <div class="tour-detail">
-                                <i class="fas fa-mountain"></i>
-                                <span>Dificultad: Fácil</span>
-                            </div>
-                        </div>
-                        <div class="tour-price">
-                            <span class="price">Desde $85</span>
-                            <span class="price-unit">por persona</span>
-                        </div>
-                        <div class="tour-buttons">
-                            <button class="btn btn-primary" onclick="openTourModal('irazu')">Ver Detalles</button>
-                            <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20el%20tour%20al%20Volcán%20Irazú.%20¿Podrían%20darme%20más%20información?" class="btn btn-secondary">Consultar</a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Reserva Natural CloudBridge -->
-                <div class="tour-card" data-tour="cloudbridge">
-                    <div class="tour-image">
-                        <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg" alt="CloudBridge">
-                    </div>
-                    <div class="tour-content">
-                        <h3>Reserva Natural CloudBridge</h3>
-                        <p class="tour-description">Camina entre las nubes en esta reserva privada dedicada a la conservación del bosque nuboso.</p>
-                        <div class="tour-details">
-                            <div class="tour-detail">
-                                <i class="fas fa-clock"></i>
-                                <span>1 día</span>
-                            </div>
-                            <div class="tour-detail">
-                                <i class="fas fa-users"></i>
-                                <span>4-12 personas</span>
-                            </div>
-                            <div class="tour-detail">
-                                <i class="fas fa-mountain"></i>
-                                <span>Dificultad: Moderada</span>
-                            </div>
+                    <!-- Parque Nacional Corcovado -->
+                    <div class="tour-card" data-tour="corcovado">
+                        <div class="tour-image">
+                            <img src="/assets/parque_nacional_corcovado.jpg"
+                                alt="Corcovado">
                         </div>
-                        <div class="tour-price">
-                            <span class="price">Desde $95</span>
-                            <span class="price-unit">por persona</span>
-                        </div>
-                        <div class="tour-buttons">
-                            <button class="btn btn-primary" onclick="openTourModal('cloudbridge')">Ver Detalles</button>
-                            <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20el%20tour%20a%20la%20Reserva%20Natural%20CloudBridge.%20¿Podrían%20darme%20más%20información?" class="btn btn-secondary">Consultar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Reserva Natural Talamanca -->
-                <div class="tour-card" data-tour="talamanca">
-                    <div class="tour-image">
-                        <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg" alt="Talamanca">
-                    </div>
-                    <div class="tour-content">
-                        <h3>Reserva Natural Talamanca</h3>
-                        <p class="tour-description">Aventura en una de las reservas más vírgenes de Costa Rica. Naturaleza en estado puro.</p>
-                        <div class="tour-details">
-                            <div class="tour-detail">
-                                <i class="fas fa-clock"></i>
-                                <span>2 días / 1 noche</span>
+                        <div class="tour-content">
+                            <h3>Parque Nacional Corcovado</h3>
+                            <p class="tour-description">El lugar con mayor biodiversidad de Costa Rica. Hogar del 2.5%
+                                de la biodiversidad mundial.</p>
+                            <div class="tour-details">
+                                <div class="tour-detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>3 días / 2 noches</span>
+                                </div>
+                                <div class="tour-detail">
+                                    <i class="fas fa-users"></i>
+                                    <span>4-10 personas</span>
+                                </div>
+                                <div class="tour-detail">
+                                    <i class="fas fa-mountain"></i>
+                                    <span>Dificultad: Moderada</span>
+                                </div>
                             </div>
-                            <div class="tour-detail">
-                                <i class="fas fa-users"></i>
-                                <span>4-10 personas</span>
+                            <div class="tour-price">
+                                <span class="price">Desde $320</span>
+                                <span class="price-unit">por persona</span>
                             </div>
-                            <div class="tour-detail">
-                                <i class="fas fa-mountain"></i>
-                                <span>Dificultad: Moderada-Alta</span>
+                            <div class="tour-buttons">
+                                <button class="btn btn-primary" onclick="openTourModal('corcovado')">Ver
+                                    Detalles</button>
+                                <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20el%20tour%20al%20Parque%20Nacional%20Corcovado.%20¿Podrían%20darme%20más%20información?"
+                                    class="btn btn-secondary">Consultar</a>
                             </div>
-                        </div>
-                        <div class="tour-price">
-                            <span class="price">Desde $220</span>
-                            <span class="price-unit">por persona</span>
-                        </div>
-                        <div class="tour-buttons">
-                            <button class="btn btn-primary" onclick="openTourModal('talamanca')">Ver Detalles</button>
-                            <a href="https://wa.me/50684163256?text=Hola,%20me%20interesa%20el%20tour%20a%20la%20Reserva%20Natural%20Talamanca.%20¿Podrían%20darme%20más%20información?" class="btn btn-secondary">Consultar</a>
                         </div>
                     </div>
                 </div>
@@ -236,7 +273,8 @@
                 <h2>¿Listo para tu próxima aventura?</h2>
                 <p>Contáctanos y comienza a planificar tu experiencia única en Costa Rica</p>
                 <div class="cta-buttons">
-                    <a href="https://wa.me/50684163256?text=Hola,%20quiero%20más%20información%20sobre%20los%20tours%20nacionales" class="btn btn-primary">Contactar por WhatsApp</a>
+                    <a href="https://wa.me/50684163256?text=Hola,%20quiero%20más%20información%20sobre%20los%20tours%20nacionales"
+                        class="btn btn-primary">Contactar por WhatsApp</a>
                     <a href="contacto.html" class="btn btn-secondary">Ver Más Información</a>
                 </div>
             </div>
@@ -249,14 +287,17 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="/assets/logodiosa-DqjlB8U6.png" alt="Diosa de la Luna">
+                        <img src="/images/logodiosa.png" alt="Diosa de la Luna">
                         <span>Diosa de la Luna</span>
                     </div>
                     <p>Conectando almas con la montaña sagrada desde Costa Rica hacia el mundo.</p>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/diosa_de_la_luna.cr/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/Andreyshouse" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.tiktok.com/@diosa_dela_lunac.r" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/diosa_de_la_luna.cr/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/Andreyshouse" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@diosa_dela_lunac.r" target="_blank"><i
+                                class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -285,7 +326,8 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 Cabaña Diosa de la Luna. Todos los derechos reservados.</p>
-                <p class="footer-credit">Desarrollado por <a href="https://rodriasagency.com" target="_blank">Rodrias Agency</a></p>
+                <p class="footer-credit">Desarrollado por <a href="https://rodriasagency.com" target="_blank">Rodrias
+                        Agency</a></p>
             </div>
         </div>
     </footer>
@@ -302,4 +344,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
