@@ -44,23 +44,39 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-background">
-            <div class="stars"></div>
+    <div class="hero-background-carousel">
+        <div class="carousel-image active" style="background-image: url('images/Cerro\ Chirripo.jpg');"></div>
+        <div class="carousel-image" style="background-image: url('images/playa_corcovado.jpg');"></div>
+        <div class="carousel-image" style="background-image: url('images/reserva_natural_cloudBridge.jpg');"></div>
+        <div class="carousel-image" style="background-image: url('images/Volcan\ Baru.jpg');"></div>
+        <div class="carousel-image" style="background-image: url('images/volcan_irazu.jpg');"></div>
+        <div class="carousel-image" style="background-image: url('images/volcan_baru_2.jpg');"></div>
+        <div class="carousel-image" style="background-image: url('images/volcan_baru_4x4.jpg');"></div>
+    </div>
+
+    <div class="hero-content">
+        <div class="hero-text">
+        <h1 class="hero-title">Diosa de la Luna CR</h1>
+        <p class="hero-subtitle">"Subí a lo más alto de Costa Rica con guías que aman la montaña"</p>
+        <p class="hero-description">
+            Conecta con la naturaleza, vive la aventura y descubre la espiritualidad en el Chirripó y destinos únicos de Costa Rica y el mundo.
+        </p>
+        <div class="hero-buttons">
+            <a href="tours-nacionales.html" class="btn btn-primary">Explorar Tours</a>
+            <a href="https://wa.me/50684163256?text=Hola,%20quiero%20reservar%20un%20tour%20al%20Chirripó" class="btn btn-secondary">Reservar Ahora</a>
         </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Diosa de la Luna CR</h1>
-                <p class="hero-subtitle">"Subí a lo más alto de Costa Rica con guías que aman la montaña"</p>
-                <p class="hero-description">Conecta con la naturaleza, vive la aventura y descubre la espiritualidad en el Chirripó y destinos únicos de Costa Rica y el mundo.</p>
-                <div class="hero-buttons">
-                    <a href="tours-nacionales.html" class="btn btn-primary">Explorar Tours</a>
-                    <a href="https://wa.me/50684163256?text=Hola,%20quiero%20reservar%20un%20tour%20al%20Chirripó" class="btn btn-secondary">Reservar Ahora</a>
-                </div>
-            </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
+    </div>
+
+    <div class="slider-indicators">
+        <span class="indicator active" data-index="0"></span>
+        <span class="indicator" data-index="1"></span>
+        <span class="indicator" data-index="2"></span>
+        <span class="indicator" data-index="3"></span>
+        <span class="indicator" data-index="4"></span>
+        <span class="indicator" data-index="5"></span>
+        <span class="indicator" data-index="6"></span>
+    </div>
     </section>
 
     <!-- About Section -->
@@ -227,5 +243,40 @@ las lagrimas brotaron de satisfacción de haber logrado la meta por la cual tra
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        const images = document.querySelectorAll('.carousel-image');
+        const indicators = document.querySelectorAll('.indicator');
+        let current = 0;
+        let interval;
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+            img.classList.toggle('active', i === index);
+            });
+            indicators.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+            });
+            current = index;
+        }
+
+        function startSlider() {
+            interval = setInterval(() => {
+            const nextIndex = (current + 1) % images.length;
+            showImage(nextIndex);
+            }, 2000);
+        }
+
+        indicators.forEach(indicator => {
+            indicator.addEventListener('click', () => {
+            clearInterval(interval); 
+            showImage(Number(indicator.dataset.index));
+            startSlider();
+            });
+        });
+
+        startSlider();
+    </script>
+
+
 </body>
 </html>

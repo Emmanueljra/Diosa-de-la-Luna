@@ -212,15 +212,57 @@ body {
     overflow: hidden;
 }
 
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg') center/cover;
-    opacity: 0.3;
+.hero-background-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
 }
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 0;
+}
+
+.carousel-image.active {
+  opacity: 0.3; /* controla la opacidad para que el texto se vea bien */
+  z-index: 1;
+}
+
+.slider-indicators {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: var(--moon-gold); /* o #FFD700 o tu color personalizado */
+}
+
 
 .stars {
     position: absolute;
@@ -317,16 +359,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-}
-
-.scroll-arrow {
-    width: 30px;
-    height: 30px;
-    border: 2px solid var(--star-white);
-    border-top: none;
-    border-right: none;
-    transform: rotate(-45deg);
-    animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
